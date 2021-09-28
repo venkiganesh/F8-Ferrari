@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en"  dir="ltr">
+<script src="https://kit.fontawesome.com/0692c82101.js" crossorigin="anonymous"></script>
+  <head>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia&effect=neon|outline|emboss|shadow-multiple">
+<link rel="stylesheet" href="ferrari.css">
+<link rel="stylesheet" href="ferrari_media.css">
+<title>Ferrari F8</title>
+    <style media="screen">
+    </style>
+  </head>
+  <body>
+
+<div class="car-container">
+<div class="sidebar">
+  <i id="t" class="fab fa-twitter"></i><br>
+  <i id="g"  class="fab fa-github"></i><br>
+  <i id="l"  class="fab fa-linkedin"></i><br>
+  <i id="i"  class="fab fa-instagram"></i><br>
+  <i id="f" class="fab fa-facebook"></i>
+
+</div>
+  <img class="logo" src="https://www.car-revs-daily.com/wp-content/uploads/2019/03/190007-car-f8-tributo-logo.png" alt="">
+  <img class="horse"src="horse.png" alt="">
+  <nav class="nav-bar">
+    <ul class="lg-nav">
+<li>Models</li>
+<li>Test Drive</li>
+<li><button type="button" onclick="myfun()">About</button></li>
+<i id="share" class="fas fa-share-alt"></i>
+</ul>
+<div  class="toggle">
+  <i id="ham" onclick="nav_in()" class="fas fa-bars fa-1x"></i>
+  <i id="close" onclick="nav_out()" class="fas fa-times-circle"></i>
+  <ul id="toggle" class="toggle-ul">
+
+<li>Models</li>
+<li>Test Drive</li>
+<li>About</li>
+</ul>
+</div>
+
+  </nav>
+  <div class="txt">
+    <h1 class="ferrari">Ferrari </h1>
+      <h1 class="f8">F8</h1>
+  </div>
+<img class="img1"src="red1.png" alt="">
+  <h6 id="right" class="right">Experience the power.</h6>
+  <h6 class="left">Access the quantum.</h6><br>
+<h6 class="left1">In 2.5s</h6>
+<div class="bottom-txt">
+  <ul class="top-ul">
+<li class="sp">0-100 Km/h</li>
+<li class="fuel">Fuel<li>
+<li class="en">Engine</li>
+<li class="power"> Power output</li>
+</div></ul>
+<ul class="bottom-ul">
+    <li class="txt1">2.5s</li>
+    <li class="txt2"><i style="color:yellow"class="fas fa-gas-pump"></i> 78 L</li>
+    <li class="txt3">3.9 L V8</li>
+    <li class="txt4">530 kW</li>
+</ul>
+
+<div class="car-pics">
+  <img id="pic1" class="pic1"src="https://imgd.aeplcdn.com/0x0/n/cw/ec/49376/f8-tributo-exterior-right-rear-three-quarter.jpeg" alt="">
+  <img id="pic2" class="pic2"src="https://corporate.ferrari.com/sites/ferrari15ipo/files/cover_comunicati/ferrari_f8_tributo_1_1_9.jpg" alt="">
+  <img id="pic3" class="pic3"src="https://www.corvetteforum.com/wp-content/uploads/2020/11/9398a7c1-3917-45bf-83ab-3f45e7b05549.jpg" alt="">
+</div>
+<i id="up" onclick="hide()" class="fas fa-arrow-alt-circle-up"></i>
+</div>
+<script>
+function myfun() {
+  var x = document.getElementById("pic1");
+  var y= document.getElementById("pic2");
+  var z = document.getElementById("pic3");
+  var a = document.getElementById("up");
+  x.style.display="block";
+  y.style.display="block";
+  z.style.display="block";
+  a.style.display="block";
+
+}
+function hide() {
+  var x = document.getElementById("pic1");
+  var y= document.getElementById("pic2");
+  var z = document.getElementById("pic3");
+  var a = document.getElementById("up");
+  x.style.display="none";
+  y.style.display="none";
+  z.style.display="none";
+  a.style.display="none";
+
+}
+
+function nav_in() {
+  var x = document.getElementById("toggle");
+  var y= document.getElementById("ham");
+  var z = document.getElementById("close");
+  x.style.display="block";
+  y.style.display="none";
+  z.style.display="block";
+}
+function nav_out() {
+  var x = document.getElementById("toggle");
+  var y= document.getElementById("ham");
+  var z = document.getElementById("close");
+  x.style.display="none";
+  y.style.display="block";
+  z.style.display="none";
+
+}
+</script>
+  </body>
+</html>
